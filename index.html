@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtuálisLan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black p-4 text-white">
+    <header class="top-0 mb-7 z-10">
+        <section class="max-w-25 p-4 flex ">
+            <h1 class="ml-8 text-3xl font-medium p-4 rounded-xl bg-gray-950/60">Virtuális LAN</h1>
+        </section>
+      </header>
+    <main class="p-4">
+
+        <h1 class="text-2xl mb-7">Mi az a VLAN és hogyan működik?</h1>
+
+        <p class="text-xl mb-10 p-4">A VLAN, vagyis a Virtuális Helyi Hálózat, egy logikai hálózat, amely lehetővé teszi a fizikailag különböző LAN-okhoz csatlakoztatott eszközök kommunikációját. A VLAN-ok úgy működnek, hogy az Ethernet kereteket egy VLAN fejléccel kapszulázzák, amely tartalmazza a VLAN azonosítót. A VLAN-ok a 2. rétegen (adatkapcsolati réteg) vagy a 3. rétegen (hálózati réteg) működnek. A VLAN-ok több előnyt is nyújtanak, például növelik a biztonságot azzal, hogy korlátozzák azokat az eszközöket, amelyek képesek hozzáférni bármely adott VLAN-hoz. A VLAN-okat felhasználói csoportok izolálására is használhatjuk.</p>
+
+
+        <h1 class="text-2xl mb-7">VLAN előnyei: Hogyan javítja a VLAN a hálózati biztonságot és teljesítményt.</h1>
+
+        <p class="text-xl mb-10 p-4">A VLAN, vagyis a Virtuális Helyi Hálózat, jelentősen javítja a hálózati biztonságot és teljesítményt. A VLAN-ok lehetővé teszik a hálózati forgalom szegmentálását, ami csökkenti a broadcast forgalmat és növeli a hálózat hatékonyságát¹⁴. A VLAN-ok segítségével a hálózati adminisztrátorok csoportosíthatják azonos feladatokat végző vagy hasonló biztonsági követelményekkel rendelkező eszközöket, ami tovább növeli a biztonságot¹. A VLAN-ok korlátozzák a hozzáférést bizonyos hálózati erőforrásokhoz, így megakadályozzák a nem kívánt hozzáférést a kritikus adatokhoz¹². Mindezek mellett a VLAN-ok lehetővé teszik a hálózati adminisztráció és ellenőrzés finomhangolását.</p>
+
+        <h1 class="text-2xl mb-7">VLAN konfiguráció: Hogyan hozhatunk létre és rendelhetünk hozzá VLAN-t a switch portokhoz.</h1>
+
+        <p class="text-xl mb-10 p-4">A VLAN létrehozása és hozzárendelése a switch portokhoz a következő lépésekből áll: </p>
+            1. Először is, hozzáférünk a switchhez, például egy terminál emulátorral.
+            2. A konfigurációs módba lépünk, majd létrehozzuk a VLAN-t, és nevet adunk neki.
+            3. Ezután hozzárendeljük a VLAN-t a kívánt portokhoz¹. Ezt úgy tehetjük meg, hogy beállítjuk a port módját "access" módba, majd hozzárendeljük a VLAN-t.
+            4. Végül ellenőrizzük a konfigurációt, és mentjük azt.
+            <p>Ezekkel a lépésekkel létrehozhatunk és hozzárendelhetünk VLAN-t a switch portjaihoz.</p>
+        
+
+        <h1 class="text-2xl mb-7">VLAN típusok: A különböző VLAN tartományok és azok jellemzői.</h1>
+
+        <p class="text-xl mb-10 p-4">A VLAN-ok többféle típusa létezik, amelyek különböző hálózati igényeket szolgálnak ki:
+
+            1. **Alapértelmezett VLAN (Default VLAN)**: Amikor a switch bekapcsol, minden port tagja lesz az alapértelmezett VLAN-nak (általában minden switchnek van alapértelmezett VLAN-ja, amit VLAN 1-nek hívnak), ami részévé teszi őket ugyanannak a broadcast domainnek¹.
+            2. **Adat VLAN (Data VLAN)**: Az adat VLAN-t arra használják, hogy a hálózatot két csoportra osztják: egy felhasználói csoportra és egy eszközcsoportra¹.
+            3. **Hang VLAN (Voice VLAN)**: A hang VLAN-t hangforgalom hordozására konfigurálják¹.
+            4. **Kezelési VLAN (Management VLAN)**: A kezelési VLAN-t a switch kezelési képességeinek elérésére konfigurálják¹.
+            5. **Bennszülött VLAN (Native VLAN)**: Ez a VLAN azonosítja a trunkszakasz mindkét végéről érkező forgalmat¹.
+            
+            Ezek a VLAN típusok különböző hálózati igényeket szolgálnak ki, és lehetővé teszik a hálózati adminisztrátorok számára, hogy finomhangolják a hálózatukat¹²³⁴⁵.</p>
+        
+    </main>
+</body>
+</html>
